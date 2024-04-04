@@ -6,16 +6,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("List Tile"),
+          title: const Text("List with detail page"),
           backgroundColor: Colors.blue,
         ),
         body: ListView(
-          children: [
+          children: const [
             CustomListTile(
               name: "Ahmad Muhyiddin",
               subtitle: "This is subtitle",
